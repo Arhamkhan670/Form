@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+
+
+
+<style>
+        body {
+            background-color: rgb(39, 36, 36);
+        }
+
+        fieldset {
+            width: 500px;
+            border: 8px solid rgb(18, 19, 17);
+            background-color: hsl(145, 98%, 53%);
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            border: none;
+            padding: 10px;
+        }
+
+
+        textarea {
+            width: 300px;
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: red;
+            padding: 8px 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <center>
+
+        <form action="action.html">
+
+            <fieldset>
+
+                <legend>
+                    <h3 style="color: red;">REGISTRATION FORM</h3>
+                </legend>
+
+                <table>
+
+                    <tr>
+                        <td>
+                            <label for="name">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password" name="password" required placeholder="Enter your password">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="confirm_password">
+                                Confirm Password:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="password"
+                                   id="confirm_password"
+                                   name="confirm_password"
+                                   required
+                                   placeholder="Confirm your password">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="birth">Date of Birth:</label>
+                        </td>
+                        <td>
+                            <input type="date" id="birth" name="birth" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="country">Country:</label>
+                        </td>
+                        <td>
+                            <select id="country" name="country" required>
+                                <option value="">Select your country</option>
+                                <option value="USA">Pakistan</option>
+                                <option value="Canada">Canada</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="UAE">Dubai</option>
+                                <option value="Denmark">Denmark</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Gender:</label>
+                        </td>
+                        <td>
+                            <input type="radio"
+                                   id="male"
+                                   name="gender"
+                                   value="male"
+                                   required>
+                            <label for="male">Male</label>
+
+                            <input type="radio"
+                                   id="female"
+                                   name="gender"
+                                   value="female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="mobile">Mobile Number:</label>
+                        </td>
+                        <td>
+                            <input type="tel"
+                                   id="mobile"
+                                   name="mobile"
+                                   required placeholder="Enter your mobile number">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="address">Address:</label>
+                        </td>
+                        <td>
+                            <textarea id="address"
+                                      name="address"
+                                      placeholder="Enter your address"
+                                      rows="5"
+                                      cols="30"
+                                      required></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Interests:</label>
+                        </td>
+                        <td>
+
+                            <input type="radio"
+                                   id="story"
+                                   name="interest"
+                                   value="STORY">
+                            <label for="story">STORY</label>
+
+                            <br>
+
+                            <input type="radio"
+                                   id="scrolling"
+                                   name="interest"
+                                   value="SCROLLING">
+                            <label for="scrolling">SCROLLING</label>
+
+                            <br>
+
+                            <input type="radio"
+                                   id="watching_movies"
+                                   name="interest"
+                                   value="WATCHING MOVIES">
+                            <label for="watching_movies">
+                                WATCHING MOVIES
+                            </label>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="terms">Terms and Conditions:</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the terms and conditions</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="submit">Submit:</label>
+                        </td>
+                        <td>
+                            <input type="submit"
+                                   id="submit"
+                                   name="submit"
+                                   value="Submit">
+                        </td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+
+        </form>
+
+    </center>
+
+</body>
+</html>
